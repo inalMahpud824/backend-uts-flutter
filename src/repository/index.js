@@ -1,2 +1,3 @@
 const userRepository = require('./user.repository')
-module.exports = {userRepository}
+const profileRepository = require('./profile.repository')
+module.exports = {userRepository, profileRepository}

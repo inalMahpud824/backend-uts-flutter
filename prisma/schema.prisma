@@ -21,3 +21,15 @@ model User {
 
   @@map("users")
 }
+
+model Profile {
+  id         Int     @id @default(autoincrement())
+  name       String?
+  latitude   Float?
+  longtitude Float?
+  image      String? @db.VarChar(200)
+  provinsi   String?
+  kabupaten  String?
+
+  @@map("profiles")
+}

@@ -1,2 +1,3 @@
 const authServices = require('./auth.service')
-module.exports = {authServices}
+const profileService = require('./profile.service')
+module.exports = {authServices, profileService}
